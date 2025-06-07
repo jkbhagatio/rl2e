@@ -17,7 +17,7 @@ license = { file = "LICENSE" }
 readme = "README.md"
 
 [tool.black]
-line-length = 88
+line-length = 99
 color = true
 extend-exclude = '''
 /(
@@ -30,7 +30,7 @@ profile = "black"
 color_output = true
 
 [tool.flake8]
-max-line-length = 88
+max-line-length = 99
 # Ignore the following errors and warnings:
 #     - whitespace after '(' (E201)
 #     - whitespace before ')' (E202)

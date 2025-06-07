@@ -1,4 +1,4 @@
-"""Tests for `test_bandits.py`."""
+"""Tests for `bandits.py`."""
 
 from itertools import product
 
@@ -25,9 +25,7 @@ def test_runs():
     use_unbiased_stepsizes = (True, False)
     use_ucbs = (True, False)
     c_vals = (1, 2, 4)
-    egreedy_sampleavg_params = list(
-        product(e_vals, initial_action_values, use_ucbs, c_vals)
-    )
+    egreedy_sampleavg_params = list(product(e_vals, initial_action_values, use_ucbs, c_vals))
     egreedy_weightedavg_params = list(
         product(
             e_vals,
